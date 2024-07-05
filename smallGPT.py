@@ -22,8 +22,8 @@ prompt_token_count = int()
 completion_token_count = int()
 
 while True:
-    user_input = input("Enter a question (type 'done' to exit): ")
-    if user_input.lower() == "done":
+    user_input = input("Enter a question (type 'exit' to exit): ")
+    if user_input.lower() == "exit":
         break
       
     messages_array.append({"role": "user", "content": user_input})
